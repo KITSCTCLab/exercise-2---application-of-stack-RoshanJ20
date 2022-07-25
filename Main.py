@@ -64,7 +64,15 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
-    return True
+    for element in expression:
+      if element.isnumeric()
+        nums = nums + 1
+      else:
+        ops = ops + 1
+    if nums == ops - 1L
+      return True
+    else
+      return False
 
 
   def evaluate_postfix_expression(self, expression):
