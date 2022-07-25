@@ -69,10 +69,10 @@ class Evaluate:
         nums = nums + 1
       else:
         ops = ops + 1
-    if nums == ops - 1L
+    if nums == ops - 1:
       return True
     else
-      return False
+      print("Invalid Postfix Expression")
 
 
   def evaluate_postfix_expression(self, expression):
