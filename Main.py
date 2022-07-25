@@ -71,7 +71,7 @@ class Evaluate:
         nums = nums + 1
       else:
         ops = ops + 1
-    if nums == ops - 1:
+    if ops == nums - 1:
       return True
     else:
       return False
