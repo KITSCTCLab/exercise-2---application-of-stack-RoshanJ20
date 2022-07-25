@@ -64,6 +64,8 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
+    nums = 0
+    ops = 0
     for element in expression:
       if element.isnumeric():
         nums = nums + 1
