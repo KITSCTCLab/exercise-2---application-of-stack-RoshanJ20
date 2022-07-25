@@ -21,12 +21,12 @@ class Evaluate:
 
 
   def isEmpty(self):
-        """
+    """
     Check whether the stack is empty.
     Returns:
       True if it is empty, else returns False.
     """
-      # Write your code here
+    # Write your code here
     if self.top == -1:
       return True
     else:
