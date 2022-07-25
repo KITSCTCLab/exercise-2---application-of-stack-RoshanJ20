@@ -78,7 +78,7 @@ class Evaluate:
     # Write your code here
     stack = []
     for i in expression:
-      if i.isnum():
+      if i.isnumeric():
         stack.append(int(i))
       if len(stack) >= 2:
         if i == '+':
