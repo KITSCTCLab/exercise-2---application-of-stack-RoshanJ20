@@ -74,7 +74,7 @@ class Evaluate:
     if nums == ops - 1:
       return True
     else:
-      print("Invalid Postfix Expression")
+      return False
 
 
   def evaluate_postfix_expression(self, expression):
