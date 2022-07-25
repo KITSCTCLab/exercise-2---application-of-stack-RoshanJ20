@@ -65,13 +65,13 @@ class Evaluate:
     """
     # Write your code here
     for element in expression:
-      if element.isnumeric()
+      if element.isnumeric():
         nums = nums + 1
       else:
         ops = ops + 1
     if nums == ops - 1:
       return True
-    else
+    else:
       print("Invalid Postfix Expression")
 
 
