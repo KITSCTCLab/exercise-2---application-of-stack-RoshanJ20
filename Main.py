@@ -21,16 +21,16 @@ class Evaluate:
 
 
   def isEmpty(self):
-    """
+        """
     Check whether the stack is empty.
     Returns:
       True if it is empty, else returns False.
     """
       # Write your code here
-      if self.top == -1:
-        return True
-      else:
-        return False
+    if self.top == -1:
+      return True
+    else:
+      return False
 
 
   def pop(self):
@@ -78,25 +78,25 @@ class Evaluate:
     # Write your code here
     stack = []
     for i in expression:
-        if i.isnum():
-            stack.append(int(i))
-        if len(stack) >= 2:
-            if i == '+':
-                stack[-2] = stack[-2] + stack[-1]
-                stack.pop()
-            elif i == '-':
-                stack[-2] = stack[-2] - stack[-1]
-                stack.pop()
-            elif i == '*':
-                stack[-2] = stack[-2] * stack[-1]
-                stack.pop()
-            elif i == '/':
-                stack[-2] = stack[-2] / stack[-1]
-                stack.pop()
-            elif i == '^':
-                stack[-2] = stack[-2] ^ stack[-1]
-                stack.pop()
-     return stack[-1]
+      if i.isnum():
+        stack.append(int(i))
+      if len(stack) >= 2:
+        if i == '+':
+          stack[-2] = stack[-2] + stack[-1]
+          stack.pop()
+        elif i == '-':
+          stack[-2] = stack[-2] - stack[-1]
+          stack.pop()
+        elif i == '*':
+          stack[-2] = stack[-2] * stack[-1]
+          stack.pop()
+        elif i == '/':
+          stack[-2] = stack[-2] / stack[-1]
+          stack.pop()
+        elif i == '^':
+          stack[-2] = stack[-2] ^ stack[-1]
+          stack.pop()
+    return stack[-1]
 
 # Do not change the following code
 postfix_expression = input()  # Read postfix expression
